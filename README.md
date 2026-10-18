@@ -8,8 +8,11 @@ Built as a data science / applied engineering portfolio project: a small end-to-
 pipeline (scrape, cache, optimize, serve) with a pandas/Jupyter analysis layer on
 top of the same data.
 
-![screenshot placeholder](docs/screenshot.png)
-*(Add your own screenshot here once you've run the app -- see "Getting Started" below.)*
+![ProteinBudget planner page](docs/screenshot.png)
+
+| Recipe page |
+|---|
+| ![Recipe page with ingredients and step-by-step method](docs/screenshot-recipe.png) |
 
 ## Why this exists
 
