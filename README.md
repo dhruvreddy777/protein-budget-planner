@@ -76,7 +76,7 @@ PyYAML, pandas, matplotlib, pytest + pytest-asyncio
 ## Getting started
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/dhruvreddy777/protein-budget-planner.git
 cd protein-budget-planner
 python -m venv venv
 venv\Scripts\activate
