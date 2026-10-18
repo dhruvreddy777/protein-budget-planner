@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% from "_macros.html" import recipe_card %}
+{% set active = "recipes" %}
+{% block title %}{{ recipe.name }} · ProteinBudget{% endblock %}
+
+{% block content %}
+<section class="recipe-hero thumb-{{ recipe.meal_type }}">
+    <div class="container recipe-hero-grid">
+        <div>
+            <a href="/recipes" class="back-link">← All recipes</a>
+            <span class="meal-tag">{{ recipe.meal_type }}</span>
+            <h1>{{ recipe.name }}</h1>
+            <p class="lede">{{ recipe.method }}</p>
+            <ul class="fact-row">
+                <li><strong>{{ "%.0f"|format(recipe.protein_per_serving) }}g</strong><span>protein / serve</span></li>
+                <li><strong>{{ recipe.prep_minutes }}m</strong><span>prep</span></li>
+                <li><strong>{{ recipe.cook_minutes }}m</strong><span>cook</span></li>
+                <li><strong>{{ recipe.servings }}</strong><span>serves</span></li>
+            </ul>
+        </div>
+        <div class="recipe-hero-art" aria-hidden="true">{{ recipe.emoji }}</div>
+    </div>
+</section>
+
+<div class="container recipe-layout">
+    <aside class="card ingredients">
+        <h2>Ingredients</h2>
+        <p class="muted small">From the ProteinBudget staples list. Tap to tick off as you go.</p>
+        <ul class="ingredient-list">
+            {% for ing in recipe.ingredients %}
+                {% set item = items.get(ing) %}
+                <li>
+                    <label>
+                        <input type="checkbox">
+                        <span class="ing-name">{{ item.name if item else ing }}</span>
+                        {% if item %}<span class="muted small">{{ item.unit_label }}</span>{% endif %}
+                    </label>
+                </li>
+            {% endfor %}
+        </ul>
+        <p class="muted small">Plus basic seasonings: salt, pepper, oil.</p>
+        <div class="protein-total">
+            <span>Whole recipe</span>
+            <strong>{{ "%.0f"|format(recipe.protein_total) }}g protein</strong>
+        </div>
+    </aside>
+
+    <section class="method">
+        <h2>Cooking method</h2>
+        <ol class="steps">
+            {% for step in recipe.steps %}
+                <li><span class="step-index">{{ loop.index }}</span><p>{{ step }}</p></li>
+            {% else %}
+                <li><span class="step-index">1</span><p>{{ recipe.method }}</p></li>
+            {% endfor %}
+        </ol>
+        {% if recipe.tip %}
+            <div class="tip">
+                <span class="tip-icon">💡</span>
+                <div><strong>Chef's tip</strong><p>{{ recipe.tip }}</p></div>
+            </div>
+        {% endif %}
+    </section>
+</div>
+
+{% if related %}
+<section class="container block">
+    <div class="block-head"><h2>You might also like</h2></div>
+    <div class="recipe-grid">
+        {% for r in related %}{{ recipe_card(r, items) }}{% endfor %}
+    </div>
+</section>
+{% endif %}
+{% endblock %}

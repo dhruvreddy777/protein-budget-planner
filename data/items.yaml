@@ -1,0 +1,225 @@
+items:
+  - id: chicken_breast
+    name: Chicken Breast
+    category: protein
+    unit_grams: 500
+    unit_label: 500g pack
+    protein_per_100g: 31
+    coles_search_term: chicken breast
+    aldi_search_term: chicken breast
+  - id: eggs
+    name: Eggs
+    category: protein
+    unit_grams: 600
+    unit_label: dozen
+    protein_per_100g: 13
+    coles_search_term: eggs 12 pack
+    aldi_search_term: eggs 12 pack
+  - id: canned_tuna
+    name: Canned Tuna
+    category: protein
+    unit_grams: 185
+    unit_label: 185g can
+    protein_per_100g: 26
+    coles_search_term: canned tuna
+    aldi_search_term: canned tuna
+  - id: lentils
+    name: Dried Lentils
+    category: protein
+    unit_grams: 500
+    unit_label: 500g bag
+    protein_per_100g: 24
+    coles_search_term: dried lentils
+    aldi_search_term: dried lentils
+  - id: chickpeas
+    name: Canned Chickpeas
+    category: protein
+    unit_grams: 400
+    unit_label: 400g can
+    protein_per_100g: 7
+    coles_search_term: canned chickpeas
+    aldi_search_term: canned chickpeas
+  - id: greek_yogurt
+    name: Greek Yogurt
+    category: protein
+    unit_grams: 700
+    unit_label: 700g tub
+    protein_per_100g: 10
+    coles_search_term: greek yogurt
+    aldi_search_term: greek yogurt
+  - id: milk
+    name: Milk
+    category: protein
+    unit_grams: 2000
+    unit_label: 2L
+    protein_per_100g: 3.4
+    coles_search_term: full cream milk 2l
+    aldi_search_term: full cream milk 2l
+  - id: tofu
+    name: Firm Tofu
+    category: protein
+    unit_grams: 300
+    unit_label: 300g pack
+    protein_per_100g: 8
+    coles_search_term: firm tofu
+    aldi_search_term: firm tofu
+  - id: beef_mince
+    name: Beef Mince
+    category: protein
+    unit_grams: 500
+    unit_label: 500g pack
+    protein_per_100g: 26
+    coles_search_term: beef mince
+    aldi_search_term: beef mince
+  - id: cottage_cheese
+    name: Cottage Cheese
+    category: protein
+    unit_grams: 250
+    unit_label: 250g tub
+    protein_per_100g: 11
+    coles_search_term: cottage cheese
+    aldi_search_term: cottage cheese
+  - id: salmon_canned
+    name: Canned Salmon
+    category: protein
+    unit_grams: 210
+    unit_label: 210g can
+    protein_per_100g: 22
+    coles_search_term: canned salmon
+    aldi_search_term: canned salmon
+  - id: cheese
+    name: Cheddar Cheese
+    category: protein
+    unit_grams: 250
+    unit_label: 250g block
+    protein_per_100g: 25
+    coles_search_term: cheddar cheese
+    aldi_search_term: cheddar cheese
+  - id: rice
+    name: Rice
+    category: carbs
+    unit_grams: 1000
+    unit_label: 1kg bag
+    protein_per_100g: 7
+    coles_search_term: white rice 1kg
+    aldi_search_term: white rice 1kg
+  - id: pasta
+    name: Pasta
+    category: carbs
+    unit_grams: 500
+    unit_label: 500g pack
+    protein_per_100g: 13
+    coles_search_term: pasta
+    aldi_search_term: pasta
+  - id: bread
+    name: Bread
+    category: carbs
+    unit_grams: 700
+    unit_label: 700g loaf
+    protein_per_100g: 9
+    coles_search_term: white bread loaf
+    aldi_search_term: white bread loaf
+  - id: oats
+    name: Rolled Oats
+    category: carbs
+    unit_grams: 750
+    unit_label: 750g pack
+    protein_per_100g: 13
+    coles_search_term: rolled oats
+    aldi_search_term: rolled oats
+  - id: potatoes
+    name: Potatoes
+    category: carbs
+    unit_grams: 2000
+    unit_label: 2kg bag
+    protein_per_100g: 2
+    coles_search_term: potatoes 2kg
+    aldi_search_term: potatoes 2kg
+  - id: onion
+    name: Onion
+    category: veg
+    unit_grams: 1000
+    unit_label: 1kg bag
+    protein_per_100g: 1.1
+    coles_search_term: brown onions 1kg
+    aldi_search_term: brown onions 1kg
+  - id: carrot
+    name: Carrot
+    category: veg
+    unit_grams: 1000
+    unit_label: 1kg bag
+    protein_per_100g: 0.9
+    coles_search_term: carrots 1kg
+    aldi_search_term: carrots 1kg
+  - id: frozen_mixed_veg
+    name: Frozen Mixed Vegetables
+    category: veg
+    unit_grams: 1000
+    unit_label: 1kg bag
+    protein_per_100g: 2.5
+    coles_search_term: frozen mixed vegetables
+    aldi_search_term: frozen mixed vegetables
+  - id: banana
+    name: Banana
+    category: veg
+    unit_grams: 1000
+    unit_label: 1kg
+    protein_per_100g: 1.1
+    coles_search_term: bananas
+    aldi_search_term: bananas
+  - id: apple
+    name: Apple
+    category: veg
+    unit_grams: 1000
+    unit_label: 1kg bag
+    protein_per_100g: 0.3
+    coles_search_term: apples 1kg
+    aldi_search_term: apples 1kg
+  - id: frozen_berries
+    name: Frozen Mixed Berries
+    category: veg
+    unit_grams: 500
+    unit_label: 500g pack
+    protein_per_100g: 0.7
+    coles_search_term: frozen mixed berries
+    aldi_search_term: frozen mixed berries
+  - id: olive_oil
+    name: Olive Oil
+    category: pantry
+    unit_grams: 500
+    unit_label: 500ml bottle
+    protein_per_100g: 0
+    coles_search_term: olive oil 500ml
+    aldi_search_term: olive oil 500ml
+  - id: canned_tomatoes
+    name: Canned Tomatoes
+    category: pantry
+    unit_grams: 400
+    unit_label: 400g can
+    protein_per_100g: 1.2
+    coles_search_term: canned tomatoes
+    aldi_search_term: canned tomatoes
+  - id: peanut_butter
+    name: Peanut Butter
+    category: pantry
+    unit_grams: 500
+    unit_label: 500g jar
+    protein_per_100g: 25
+    coles_search_term: peanut butter
+    aldi_search_term: peanut butter
+  - id: baked_beans
+    name: Baked Beans
+    category: pantry
+    unit_grams: 420
+    unit_label: 420g can
+    protein_per_100g: 5.6
+    coles_search_term: baked beans
+    aldi_search_term: baked beans
+  - id: almonds
+    name: Almonds
+    category: pantry
+    unit_grams: 200
+    unit_label: 200g pack
+    protein_per_100g: 21
+    coles_search_term: almonds
+    aldi_search_term: almonds

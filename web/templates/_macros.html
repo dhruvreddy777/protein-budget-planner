@@ -1,0 +1,21 @@
+{% macro recipe_card(recipe, items, badge=None) -%}
+<a class="recipe-card" href="/recipes/{{ recipe.id }}"
+   data-meal="{{ recipe.meal_type }}" data-protein="{{ recipe.protein_per_serving }}"
+   data-time="{{ recipe.total_minutes }}" data-name="{{ recipe.name|lower }}"
+   data-search="{{ recipe.name|lower }} {% for i in recipe.ingredients %}{{ items[i].name|lower if i in items else i }} {% endfor %}">
+    <div class="recipe-thumb thumb-{{ recipe.meal_type }}">
+        <span class="recipe-emoji" aria-hidden="true">{{ recipe.emoji }}</span>
+        <span class="protein-badge"><strong>{{ "%.0f"|format(recipe.protein_per_serving) }}g</strong> protein</span>
+        {% if badge %}<span class="status-badge">{{ badge }}</span>{% endif %}
+    </div>
+    <div class="recipe-body">
+        <span class="meal-tag">{{ recipe.meal_type }}</span>
+        <h3>{{ recipe.name }}</h3>
+        <ul class="recipe-meta">
+            <li>⏱ {{ recipe.total_minutes }} min</li>
+            <li>🍽 Serves {{ recipe.servings }}</li>
+            <li>🧺 {{ recipe.ingredients|length }} items</li>
+        </ul>
+    </div>
+</a>
+{%- endmacro %}

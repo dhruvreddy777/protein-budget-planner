@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% set active = "planner" %}
+{% block title %}ProteinBudget Planner{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="container hero-grid">
+        <div class="hero-copy">
+            <span class="eyebrow">Coles × Aldi · Sydney</span>
+            <h1>More protein.<br><span class="accent">Less spend.</span></h1>
+            <p class="lede">Tell us your budget and what's already in your kitchen. We'll build the cheapest high-protein basket across both stores and show you exactly what you can cook.</p>
+            <ul class="hero-stats">
+                <li><strong>{{ items|length }}</strong><span>tracked staples</span></li>
+                <li><strong>{{ recipe_count }}</strong><span>protein-rich recipes</span></li>
+                <li><strong>2</strong><span>stores compared</span></li>
+            </ul>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+            <div class="plate">
+                <span class="food f1">🍗</span><span class="food f2">🥚</span>
+                <span class="food f3">🥦</span><span class="food f4">🫘</span>
+                <span class="food f5">🍚</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <form action="/plan" method="post" class="planner card">
+        <div class="step">
+            <div class="step-head">
+                <span class="step-num">1</span>
+                <div>
+                    <h2>Set your budget</h2>
+                    <p class="muted">How much do you want to spend this shop?</p>
+                </div>
+            </div>
+            <div class="budget-row">
+                <label class="budget-input" for="budget">
+                    <span class="currency">$</span>
+                    <input type="number" id="budget" name="budget" min="1" step="0.01" placeholder="40" required>
+                    <span class="unit">AUD</span>
+                </label>
+                <div class="quick-picks" role="group" aria-label="Quick budget amounts">
+                    {% for amt in [20, 40, 60, 100] %}
+                        <button type="button" class="pill" data-amount="{{ amt }}">${{ amt }}</button>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-head">
+                <span class="step-num">2</span>
+                <div>
+                    <h2>What's in your pantry?</h2>
+                    <p class="muted">Tap anything you already have. We'll find meals you can make right now. <span class="selected-count" id="selected-count"></span></p>
+                </div>
+            </div>
+            {% set labels = {"protein": "🥩 Proteins", "carbs": "🌾 Carbs", "veg": "🥕 Fruit & veg", "pantry": "🫙 Pantry"} %}
+            {% for category in ["protein", "carbs", "veg", "pantry"] %}
+                {% set group = items.values()|selectattr("category", "equalto", category)|list %}
+                <fieldset class="chip-group">
+                    <legend>{{ labels.get(category, category|capitalize) }}</legend>
+                    <div class="chips">
+                        {% for item in group %}
+                            <label class="chip">
+                                <input type="checkbox" name="have_items" value="{{ item.id }}">
+                                <span>{{ item.name }}</span>
+                            </label>
+                        {% endfor %}
+                    </div>
+                </fieldset>
+            {% endfor %}
+        </div>
+
+        <div class="form-footer">
+            <button type="submit" class="btn btn-primary btn-lg">Build my basket <span aria-hidden="true">→</span></button>
+            <a href="/recipes" class="btn btn-ghost">Browse all recipes</a>
+        </div>
+    </form>
+</section>
+
+<section class="container how">
+    <h2 class="section-title">How it works</h2>
+    <div class="how-grid">
+        <div class="how-card"><span class="how-icon">💰</span><h3>Budget-first</h3><p>We rank every staple by grams of protein per dollar and fill your basket greedily within budget.</p></div>
+        <div class="how-card"><span class="how-icon">🏪</span><h3>Cheapest store</h3><p>Each item comes from whichever of Coles or Aldi is cheaper this week.</p></div>
+        <div class="how-card"><span class="how-icon">🍳</span><h3>Real meals</h3><p>See full recipes you can cook now, plus the ones this shop unlocks.</p></div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    const budget = document.getElementById("budget");
+    document.querySelectorAll(".quick-picks .pill").forEach(btn => {
+        btn.addEventListener("click", () => {
+            budget.value = btn.dataset.amount;
+            document.querySelectorAll(".quick-picks .pill").forEach(b => b.classList.toggle("is-active", b === btn));
+        });
+    });
+    budget.addEventListener("input", () => document.querySelectorAll(".quick-picks .pill").forEach(b => b.classList.toggle("is-active", b.dataset.amount === budget.value)));
+    const count = document.getElementById("selected-count");
+    const update = () => {
+        const n = document.querySelectorAll('.chip input:checked').length;
+        count.textContent = n ? `${n} selected` : "";
+    };
+    document.querySelectorAll(".chip input").forEach(c => c.addEventListener("change", update));
+</script>
+{% endblock %}

@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% from "_macros.html" import recipe_card %}
+{% set active = "planner" %}
+{% block title %}Your plan · ProteinBudget{% endblock %}
+
+{% block content %}
+<section class="page-head">
+    <div class="container">
+        <a href="/" class="back-link">← Change budget or pantry</a>
+        <span class="eyebrow">Your shopping plan</span>
+        <h1>Your plan for <span class="accent">${{ "%.2f"|format(budget) }}</span></h1>
+        {% if last_scrape %}
+            <p class="freshness"><span class="dot"></span> Prices last updated: {{ last_scrape|nicedate }}</p>
+        {% endif %}
+    </div>
+</section>
+
+<div class="container results">
+    {% if error %}
+        <div class="alert">
+            <span class="alert-icon">⚠️</span>
+            <p class="error">{{ error }}</p>
+        </div>
+    {% else %}
+        {% set pct = (basket.total_spent / budget * 100) if budget else 0 %}
+        <section class="stats-grid">
+            <div class="stat stat-hero">
+                <span class="stat-label">Total protein</span>
+                <span class="stat-value">{{ "%.0f"|format(basket.total_protein) }}<small>g</small></span>
+                <span class="stat-sub">across {{ basket.entries|length }} items</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">You spend</span>
+                <span class="stat-value">${{ "%.2f"|format(basket.total_spent) }}</span>
+                <div class="meter" role="img" aria-label="{{ '%.0f'|format(pct) }}% of budget used"><span style="width: {{ [pct, 100]|min }}%"></span></div>
+                <span class="stat-sub">{{ "%.0f"|format(pct) }}% of budget · ${{ "%.2f"|format(budget - basket.total_spent) }} left</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Protein per dollar</span>
+                <span class="stat-value">{{ "%.0f"|format(basket.total_protein / basket.total_spent if basket.total_spent else 0) }}<small>g/$</small></span>
+                <span class="stat-sub">higher is better</span>
+            </div>
+        </section>
+    {% endif %}
+
+    <section class="block">
+        <div class="block-head">
+            <h2>Meals you can make right now</h2>
+            <span class="count-pill">{{ pantry_meals|length }}</span>
+        </div>
+        {% if pantry_meals %}
+            <div class="recipe-grid">
+                {% for meal in pantry_meals %}{{ recipe_card(meal, items, "Ready now") }}{% endfor %}
+            </div>
+        {% else %}
+            <div class="empty">
+                <span>🥄</span>
+                <p>No full meal matches from just what you have ticked yet. See what shopping unlocks below.</p>
+            </div>
+        {% endif %}
+    </section>
+
+    {% if not error %}
+        <section class="block">
+            <div class="block-head">
+                <h2>Your basket</h2>
+                <span class="count-pill">{{ basket.entries|length }}</span>
+            </div>
+            <div class="basket card">
+                {% for entry in basket.entries %}
+                    <div class="basket-row">
+                        <div class="basket-item">
+                            <span class="basket-name">{{ entry.item.name }}</span>
+                            <span class="muted small">{{ entry.item.unit_label }}
+                                {% if entry.for_recipe %}· <a class="for-meal" href="/recipes/{{ entry.for_recipe }}">for {{ recipe_names[entry.for_recipe] }}</a>
+                                {% else %}· <span class="for-topup">protein top-up</span>{% endif %}</span>
+                        </div>
+                        <span class="store store-{{ entry.store }}">{{ entry.store|capitalize }}</span>
+                        <span class="basket-protein">{{ "%.0f"|format(entry.protein_total) }}g</span>
+                        <span class="basket-price">${{ "%.2f"|format(entry.price) }}</span>
+                    </div>
+                {% endfor %}
+                <div class="basket-row basket-total">
+                    <span>Total</span><span></span>
+                    <span class="basket-protein">{{ "%.0f"|format(basket.total_protein) }}g</span>
+                    <span class="basket-price">${{ "%.2f"|format(basket.total_spent) }}</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="block">
+            <div class="block-head">
+                <h2>Meals you can make after this shop</h2>
+                <span class="count-pill">{{ shopping_meals|length }}</span>
+            </div>
+            {% if shopping_meals %}
+                <div class="recipe-grid">
+                    {% for meal in shopping_meals %}{{ recipe_card(meal, items, "Unlocked") }}{% endfor %}
+                </div>
+            {% else %}
+                <div class="empty">
+                    <span>🛒</span>
+                    <p>No additional full meal matches yet with this basket. Try a larger budget, or <a href="/recipes">browse every recipe</a>.</p>
+                </div>
+            {% endif %}
+        </section>
+    {% endif %}
+
+    <div class="cta-row">
+        <a href="/" class="btn btn-primary">← Try another budget</a>
+        <a href="/recipes" class="btn btn-ghost">Browse all recipes</a>
+    </div>
+</div>
+{% endblock %}

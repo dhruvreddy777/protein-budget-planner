@@ -1,0 +1,786 @@
+{
+  "recipes": [
+    {
+      "id": "chicken_rice_stir_fry",
+      "name": "Chicken & Rice Stir-Fry",
+      "servings": 4,
+      "protein_per_serving": 35,
+      "ingredients": [
+        "chicken_breast",
+        "rice",
+        "carrot",
+        "onion",
+        "frozen_mixed_veg"
+      ],
+      "method": "Stir-fry diced chicken breast with onion and carrot, add frozen mixed veg, serve over cooked rice.",
+      "emoji": "🍗",
+      "meal_type": "dinner",
+      "prep_minutes": 10,
+      "cook_minutes": 20,
+      "steps": [
+        "Rinse 1½ cups rice and cook in 3 cups of water: bring to the boil, cover, and simmer on low for 12 minutes, then rest off the heat.",
+        "Dice the chicken breast into bite-sized pieces and season with salt and pepper.",
+        "Heat a splash of oil in a wok or large pan over high heat. Stir-fry the chicken for 5–6 minutes until golden and cooked through, then set aside.",
+        "Add the sliced onion and carrot to the pan and stir-fry for 3 minutes until just tender.",
+        "Tip in the frozen mixed veg and cook 2–3 minutes, then return the chicken and toss everything together.",
+        "Season with soy sauce if you have it, and serve over the rice."
+      ],
+      "tip": "Keep the pan very hot and don't overcrowd it — the chicken should sizzle, not steam."
+    },
+    {
+      "id": "lentil_curry",
+      "name": "Lentil Curry",
+      "servings": 4,
+      "protein_per_serving": 18,
+      "ingredients": [
+        "lentils",
+        "onion",
+        "canned_tomatoes",
+        "rice"
+      ],
+      "method": "Simmer lentils with onion and canned tomatoes until soft, season as a curry, serve with rice.",
+      "emoji": "🍛",
+      "meal_type": "dinner",
+      "prep_minutes": 10,
+      "cook_minutes": 35,
+      "steps": [
+        "Rinse 1½ cups dried lentils under cold water and pick out any stones.",
+        "Gently fry the diced onion in oil over medium heat for 5 minutes until soft and golden.",
+        "Stir in curry powder or any spices you have (cumin, turmeric, chilli) and cook for 1 minute until fragrant.",
+        "Add the lentils, canned tomatoes and 3 cups of water. Bring to the boil, then simmer for 25–30 minutes, stirring now and then, until the lentils are soft.",
+        "Meanwhile cook the rice. Season the curry with salt to taste and serve spooned over the rice."
+      ],
+      "tip": "Curry tastes even better the next day — it makes a great batch-cooked lunch."
+    },
+    {
+      "id": "egg_fried_rice",
+      "name": "Egg Fried Rice",
+      "servings": 3,
+      "protein_per_serving": 16,
+      "ingredients": [
+        "eggs",
+        "rice",
+        "carrot",
+        "onion",
+        "frozen_mixed_veg"
+      ],
+      "method": "Scramble eggs, mix through fried rice with diced carrot, onion and mixed veg.",
+      "emoji": "🍳",
+      "meal_type": "dinner",
+      "prep_minutes": 10,
+      "cook_minutes": 15,
+      "steps": [
+        "Use cold, cooked rice — day-old rice works best. If you're cooking it fresh, spread it on a tray to cool and dry out.",
+        "Beat the eggs with a pinch of salt.",
+        "Heat oil in a wok over high heat, pour in the eggs and scramble softly. Remove while still slightly runny.",
+        "Stir-fry the diced onion and carrot for 3 minutes, then add the frozen mixed veg for 2 minutes.",
+        "Add the rice and toss over high heat for 3–4 minutes until hot and lightly crisp.",
+        "Fold the egg back through, season with soy sauce, and serve."
+      ],
+      "tip": "Fresh, warm rice turns mushy — cold rice gives you those separate, toasty grains."
+    },
+    {
+      "id": "tuna_chickpea_salad",
+      "name": "Tuna & Chickpea Salad",
+      "servings": 2,
+      "protein_per_serving": 28,
+      "ingredients": [
+        "canned_tuna",
+        "chickpeas",
+        "onion",
+        "olive_oil"
+      ],
+      "method": "Toss canned tuna and chickpeas with diced onion and a drizzle of olive oil.",
+      "emoji": "🥗",
+      "meal_type": "lunch",
+      "prep_minutes": 10,
+      "cook_minutes": 0,
+      "steps": [
+        "Drain and rinse the chickpeas, then pat them dry.",
+        "Drain the canned tuna and flake it into a large bowl with a fork.",
+        "Finely dice the onion. Soak it in cold water for 5 minutes to soften its bite, then drain.",
+        "Add the chickpeas and onion to the tuna.",
+        "Drizzle with olive oil, season generously with salt and pepper, and toss. Add a squeeze of lemon if you have one."
+      ],
+      "tip": "This keeps well in the fridge for 2 days — a solid meal-prep lunch."
+    },
+    {
+      "id": "tofu_scramble",
+      "name": "Tofu Scramble",
+      "servings": 2,
+      "protein_per_serving": 14,
+      "ingredients": [
+        "tofu",
+        "onion",
+        "carrot",
+        "frozen_mixed_veg"
+      ],
+      "method": "Crumble and pan-fry tofu with onion, carrot and mixed veg, season like scrambled eggs.",
+      "emoji": "🥘",
+      "meal_type": "breakfast",
+      "prep_minutes": 5,
+      "cook_minutes": 10,
+      "steps": [
+        "Drain the tofu and press it between paper towels to remove excess water.",
+        "Heat oil in a non-stick pan and soften the diced onion and grated carrot for 3 minutes.",
+        "Crumble the tofu into the pan with your hands, into pieces the size of scrambled egg.",
+        "Add the frozen mixed veg and cook 4–5 minutes, stirring, until the tofu is lightly golden.",
+        "Season with salt, pepper and a pinch of turmeric (for colour) and serve."
+      ],
+      "tip": "A pinch of turmeric gives it a sunny, egg-like colour; a splash of soy sauce adds depth."
+    },
+    {
+      "id": "beef_mince_pasta",
+      "name": "Beef Mince Pasta",
+      "servings": 4,
+      "protein_per_serving": 30,
+      "ingredients": [
+        "beef_mince",
+        "pasta",
+        "canned_tomatoes",
+        "onion"
+      ],
+      "method": "Brown beef mince with onion, simmer in canned tomatoes, serve over pasta.",
+      "emoji": "🍝",
+      "meal_type": "dinner",
+      "prep_minutes": 5,
+      "cook_minutes": 25,
+      "steps": [
+        "Bring a large pot of salted water to the boil for the pasta.",
+        "Brown the beef mince in a hot pan over medium-high heat for 5–6 minutes, breaking it up with a spoon.",
+        "Add the diced onion and cook 3–4 minutes until soft.",
+        "Pour in the canned tomatoes, season with salt, pepper and dried herbs, and simmer for 15 minutes.",
+        "Meanwhile cook the pasta until al dente. Drain, keeping a splash of the pasta water.",
+        "Toss the pasta with the sauce, loosening with pasta water if needed, and serve."
+      ],
+      "tip": "Let the mince brown properly before stirring — the crusty bits are where the flavour is."
+    },
+    {
+      "id": "greek_yogurt_oat_bowl",
+      "name": "Greek Yogurt Oat Bowl",
+      "servings": 1,
+      "protein_per_serving": 20,
+      "ingredients": [
+        "greek_yogurt",
+        "oats",
+        "banana"
+      ],
+      "method": "Combine oats with Greek yogurt, top with sliced banana.",
+      "emoji": "🥣",
+      "meal_type": "breakfast",
+      "prep_minutes": 5,
+      "cook_minutes": 0,
+      "steps": [
+        "Spoon about 1 cup of Greek yogurt into a bowl.",
+        "Stir through ⅓ cup of rolled oats. Leave for 5 minutes to soften, or overnight in the fridge.",
+        "Slice the banana and arrange it on top.",
+        "Add a drizzle of honey or a sprinkle of cinnamon if you like."
+      ],
+      "tip": "Make it the night before — the oats soak up the yogurt and turn creamy."
+    },
+    {
+      "id": "cottage_cheese_toast",
+      "name": "Cottage Cheese Toast",
+      "servings": 1,
+      "protein_per_serving": 15,
+      "ingredients": [
+        "cottage_cheese",
+        "bread",
+        "apple"
+      ],
+      "method": "Spread cottage cheese on toasted bread, serve with apple slices.",
+      "emoji": "🍞",
+      "meal_type": "breakfast",
+      "prep_minutes": 5,
+      "cook_minutes": 3,
+      "steps": [
+        "Toast two slices of bread until golden.",
+        "Spread a generous layer of cottage cheese on each slice.",
+        "Season with cracked black pepper and a pinch of salt.",
+        "Slice the apple and serve on the side, or thinly on top of the toast."
+      ],
+      "tip": "Try apple slices on top with a pinch of cinnamon for a sweet version."
+    },
+    {
+      "id": "chicken_baked_potato",
+      "name": "Chicken Baked Potato",
+      "servings": 2,
+      "protein_per_serving": 32,
+      "ingredients": [
+        "chicken_breast",
+        "potatoes",
+        "frozen_mixed_veg"
+      ],
+      "method": "Bake potatoes, top with shredded cooked chicken breast and steamed mixed veg.",
+      "emoji": "🥔",
+      "meal_type": "dinner",
+      "prep_minutes": 10,
+      "cook_minutes": 50,
+      "steps": [
+        "Heat the oven to 200°C. Scrub the potatoes, prick them all over with a fork, and rub with oil and salt.",
+        "Bake for 45–50 minutes until the skins are crisp and the insides are soft.",
+        "Meanwhile season the chicken breast and pan-fry it for 6–7 minutes per side until cooked through. Rest it, then shred with two forks.",
+        "Steam or microwave the frozen mixed veg until hot.",
+        "Split the potatoes open, fluff the insides, and pile on the chicken and veg."
+      ],
+      "tip": "Microwave the potatoes for 8 minutes first, then roast for 20, to save half the time."
+    },
+    {
+      "id": "salmon_rice_bowl",
+      "name": "Salmon Rice Bowl",
+      "servings": 2,
+      "protein_per_serving": 24,
+      "ingredients": [
+        "salmon_canned",
+        "rice",
+        "carrot",
+        "onion"
+      ],
+      "method": "Flake canned salmon over rice with sauteed carrot and onion.",
+      "emoji": "🍣",
+      "meal_type": "lunch",
+      "prep_minutes": 10,
+      "cook_minutes": 15,
+      "steps": [
+        "Cook the rice, then fluff it with a fork.",
+        "Thinly slice the onion and cut the carrot into matchsticks.",
+        "Sauté the onion and carrot in a little oil for 4–5 minutes until tender-crisp.",
+        "Drain the canned salmon and flake it, removing any large bones if you prefer.",
+        "Build bowls: rice first, then the veg and salmon. Finish with soy sauce or a squeeze of lemon."
+      ],
+      "tip": "The soft bones in canned salmon are edible and full of calcium — just mash them in."
+    },
+    {
+      "id": "baked_beans_toast",
+      "name": "Baked Beans on Toast",
+      "servings": 2,
+      "protein_per_serving": 18,
+      "ingredients": [
+        "baked_beans",
+        "bread",
+        "cheese"
+      ],
+      "method": "Heat baked beans, serve on toast topped with grated cheese.",
+      "emoji": "🫘",
+      "meal_type": "breakfast",
+      "prep_minutes": 2,
+      "cook_minutes": 5,
+      "steps": [
+        "Warm the baked beans in a small saucepan over medium heat, stirring occasionally.",
+        "Toast the bread.",
+        "Grate the cheese.",
+        "Spoon the hot beans over the toast and top with cheese. Pop it under the grill for a minute to melt, if you like."
+      ],
+      "tip": "A pinch of smoked paprika or chilli flakes makes this a lot more exciting."
+    },
+    {
+      "id": "chickpea_pasta_bake",
+      "name": "Chickpea Pasta Bake",
+      "servings": 4,
+      "protein_per_serving": 22,
+      "ingredients": [
+        "chickpeas",
+        "pasta",
+        "canned_tomatoes",
+        "cheese"
+      ],
+      "method": "Mix chickpeas and pasta with canned tomatoes, top with cheese and bake.",
+      "emoji": "🧀",
+      "meal_type": "dinner",
+      "prep_minutes": 10,
+      "cook_minutes": 30,
+      "steps": [
+        "Heat the oven to 200°C and cook the pasta for 2 minutes less than the packet says. Drain.",
+        "Drain and rinse the chickpeas.",
+        "In a baking dish, combine the pasta, chickpeas and canned tomatoes. Season with salt, pepper and dried herbs.",
+        "Scatter grated cheese evenly over the top.",
+        "Bake for 20 minutes until bubbling and golden on top."
+      ],
+      "tip": "Undercooking the pasta first stops it going soft in the oven."
+    },
+    {
+      "id": "peanut_butter_oat_smoothie",
+      "name": "Peanut Butter Oat Smoothie",
+      "servings": 1,
+      "protein_per_serving": 18,
+      "ingredients": [
+        "peanut_butter",
+        "oats",
+        "milk",
+        "banana"
+      ],
+      "method": "Blend peanut butter, oats, milk and banana into a smoothie.",
+      "emoji": "🥤",
+      "meal_type": "snack",
+      "prep_minutes": 5,
+      "cook_minutes": 0,
+      "steps": [
+        "Add 1 cup of milk, ¼ cup of oats and 2 tablespoons of peanut butter to a blender.",
+        "Break in the banana — frozen banana makes it thick and cold.",
+        "Blend on high for 45–60 seconds until completely smooth.",
+        "Pour and drink straight away."
+      ],
+      "tip": "Keep peeled banana chunks in the freezer for an instant milkshake texture."
+    },
+    {
+      "id": "tuna_pasta_bake",
+      "name": "Tuna Pasta Bake",
+      "servings": 4,
+      "protein_per_serving": 26,
+      "ingredients": [
+        "canned_tuna",
+        "pasta",
+        "canned_tomatoes",
+        "cheese"
+      ],
+      "method": "Mix tuna and pasta with canned tomatoes, top with cheese and bake.",
+      "emoji": "🐟",
+      "meal_type": "dinner",
+      "prep_minutes": 10,
+      "cook_minutes": 30,
+      "steps": [
+        "Heat the oven to 200°C. Cook the pasta for 2 minutes less than the packet says, then drain.",
+        "Drain the tuna and flake it.",
+        "Mix the pasta, tuna and canned tomatoes in a baking dish, and season well.",
+        "Top with plenty of grated cheese.",
+        "Bake for 20 minutes until golden and bubbling, then rest for 5 minutes before serving."
+      ],
+      "tip": "Leftovers reheat brilliantly — portion it into containers for lunches."
+    },
+    {
+      "id": "egg_and_toast",
+      "name": "Eggs on Toast",
+      "servings": 1,
+      "protein_per_serving": 20,
+      "ingredients": [
+        "eggs",
+        "bread",
+        "cheese"
+      ],
+      "method": "Fry or boil eggs, serve on toast with a slice of cheese.",
+      "emoji": "🥚",
+      "meal_type": "breakfast",
+      "prep_minutes": 2,
+      "cook_minutes": 8,
+      "steps": [
+        "For boiled eggs: lower them into simmering water and cook for 6½ minutes for jammy yolks. For fried eggs: cook in an oiled pan over medium heat.",
+        "Toast the bread.",
+        "Lay a slice of cheese on the hot toast so it softens.",
+        "Top with the eggs and season with salt and pepper."
+      ],
+      "tip": "Transfer boiled eggs straight into cold water — they'll peel far more easily."
+    },
+    {
+      "id": "beef_mince_stuffed_potato",
+      "name": "Beef Mince Stuffed Potato",
+      "servings": 2,
+      "protein_per_serving": 28,
+      "ingredients": [
+        "beef_mince",
+        "potatoes",
+        "onion",
+        "cheese"
+      ],
+      "method": "Bake potatoes, fill with cooked beef mince and onion, top with cheese.",
+      "emoji": "🥔",
+      "meal_type": "dinner",
+      "prep_minutes": 10,
+      "cook_minutes": 55,
+      "steps": [
+        "Bake the oiled, salted potatoes at 200°C for 45–50 minutes until tender.",
+        "Meanwhile brown the beef mince with the diced onion for 8–10 minutes, and season well.",
+        "Halve the potatoes, scoop out some of the flesh, and mix it into the mince.",
+        "Pile the mixture back into the skins and top with grated cheese.",
+        "Return to the oven for 5–8 minutes until the cheese melts."
+      ],
+      "tip": "Add a spoon of canned tomatoes to the mince if you have some spare."
+    },
+    {
+      "id": "lentil_rice_bowl",
+      "name": "Lentil Rice Bowl",
+      "servings": 4,
+      "protein_per_serving": 16,
+      "ingredients": [
+        "lentils",
+        "rice",
+        "carrot",
+        "onion"
+      ],
+      "method": "Cook lentils with onion and carrot, serve over rice.",
+      "emoji": "🍚",
+      "meal_type": "lunch",
+      "prep_minutes": 10,
+      "cook_minutes": 30,
+      "steps": [
+        "Rinse the lentils and simmer them in plenty of water for 20–25 minutes until tender, then drain.",
+        "Meanwhile cook the rice.",
+        "Fry the diced onion and carrot in oil for 6–8 minutes until soft and caramelised.",
+        "Stir the lentils into the onion and carrot, and season with salt, pepper and cumin.",
+        "Serve over the rice."
+      ],
+      "tip": "Fry the onions slowly until deep brown — it turns a simple bowl into something special."
+    },
+    {
+      "id": "almond_yogurt_bowl",
+      "name": "Almond Yogurt Bowl",
+      "servings": 1,
+      "protein_per_serving": 15,
+      "ingredients": [
+        "greek_yogurt",
+        "almonds",
+        "banana",
+        "apple"
+      ],
+      "method": "Top Greek yogurt with chopped almonds, banana and apple.",
+      "emoji": "🍎",
+      "meal_type": "breakfast",
+      "prep_minutes": 5,
+      "cook_minutes": 0,
+      "steps": [
+        "Spoon Greek yogurt into a bowl.",
+        "Roughly chop a small handful of almonds. Toast them in a dry pan for 2 minutes for extra crunch, if you like.",
+        "Slice the banana and dice the apple.",
+        "Top the yogurt with the fruit and almonds."
+      ],
+      "tip": "Toasting the almonds takes 2 minutes and makes a big difference to the flavour."
+    },
+    {
+      "id": "tofu_stir_fry_noodle",
+      "name": "Tofu Stir-Fry with Pasta",
+      "servings": 3,
+      "protein_per_serving": 16,
+      "ingredients": [
+        "tofu",
+        "pasta",
+        "carrot",
+        "onion",
+        "frozen_mixed_veg"
+      ],
+      "method": "Stir-fry tofu with carrot, onion and mixed veg, toss through cooked pasta.",
+      "emoji": "🍜",
+      "meal_type": "dinner",
+      "prep_minutes": 10,
+      "cook_minutes": 20,
+      "steps": [
+        "Cook the pasta in salted water, then drain.",
+        "Press the tofu dry and cut it into cubes.",
+        "Fry the tofu in a hot oiled pan for 6–8 minutes, turning, until golden on all sides. Set aside.",
+        "Stir-fry the onion and carrot for 3 minutes, then add the frozen veg for 2 minutes.",
+        "Add the pasta and tofu, toss with soy sauce, and serve hot."
+      ],
+      "tip": "Toss the tofu cubes in a little cornflour before frying for a crispier crust."
+    },
+    {
+      "id": "chicken_salad_sandwich",
+      "name": "Chicken Salad Sandwich",
+      "servings": 2,
+      "protein_per_serving": 26,
+      "ingredients": [
+        "chicken_breast",
+        "bread",
+        "onion"
+      ],
+      "method": "Shred cooked chicken breast, mix with diced onion, serve in a sandwich.",
+      "emoji": "🥪",
+      "meal_type": "lunch",
+      "prep_minutes": 10,
+      "cook_minutes": 15,
+      "steps": [
+        "Poach the chicken breast in simmering salted water for 12–15 minutes until cooked through. Cool it slightly.",
+        "Shred the chicken with two forks.",
+        "Mix in finely diced onion and season. Add mayo or yogurt to bind, if you have some.",
+        "Pile onto bread and close the sandwich."
+      ],
+      "tip": "Poach chicken on the weekend, then lunches take two minutes all week."
+    },
+    {
+      "id": "cheese_omelette",
+      "name": "Cheese Omelette",
+      "servings": 1,
+      "protein_per_serving": 24,
+      "ingredients": [
+        "eggs",
+        "cheese",
+        "onion"
+      ],
+      "method": "Whisk eggs, cook with diced onion, fold in cheese for an omelette.",
+      "emoji": "🧀",
+      "meal_type": "breakfast",
+      "prep_minutes": 3,
+      "cook_minutes": 7,
+      "steps": [
+        "Whisk 3 eggs with a pinch of salt and pepper.",
+        "Soften the finely diced onion in butter or oil in a non-stick pan for 2–3 minutes.",
+        "Pour in the eggs and gently pull the edges toward the centre as they set.",
+        "When the top is barely set, scatter grated cheese over one half.",
+        "Fold the omelette in half, slide it onto a plate, and serve straight away."
+      ],
+      "tip": "Take it off the heat while it still looks slightly wet — it keeps cooking on the plate."
+    },
+    {
+      "id": "canned_salmon_jacket_potato",
+      "name": "Salmon Jacket Potato",
+      "servings": 2,
+      "protein_per_serving": 26,
+      "ingredients": [
+        "salmon_canned",
+        "potatoes",
+        "cottage_cheese"
+      ],
+      "method": "Bake potatoes, top with flaked canned salmon and a spoon of cottage cheese.",
+      "emoji": "🐟",
+      "meal_type": "lunch",
+      "prep_minutes": 5,
+      "cook_minutes": 50,
+      "steps": [
+        "Bake the oiled, salted potatoes at 200°C for 45–50 minutes.",
+        "Drain and flake the canned salmon.",
+        "Split the hot potatoes and fluff up the insides.",
+        "Top with salmon and a generous spoon of cottage cheese, then season with pepper."
+      ],
+      "tip": "A squeeze of lemon and some black pepper really lifts the salmon."
+    },
+    {
+      "id": "beef_mince_fried_rice",
+      "name": "Beef Mince Fried Rice",
+      "servings": 4,
+      "protein_per_serving": 28,
+      "ingredients": [
+        "beef_mince",
+        "rice",
+        "carrot",
+        "onion",
+        "frozen_mixed_veg"
+      ],
+      "method": "Brown beef mince, stir-fry with rice, carrot, onion and mixed veg.",
+      "emoji": "🍚",
+      "meal_type": "dinner",
+      "prep_minutes": 10,
+      "cook_minutes": 20,
+      "steps": [
+        "Cook the rice ahead and let it cool (or use leftover rice).",
+        "Brown the beef mince in a hot wok for 5–6 minutes until crisp, then set aside.",
+        "Stir-fry the diced onion and carrot for 3 minutes, then add the frozen mixed veg.",
+        "Add the rice and toss over high heat for 3–4 minutes.",
+        "Return the mince to the wok, season with soy sauce, and serve."
+      ],
+      "tip": "Cook the mince until it gets crispy edges for texture against the soft rice."
+    },
+    {
+      "id": "chickpea_salad",
+      "name": "Chickpea Salad",
+      "servings": 2,
+      "protein_per_serving": 12,
+      "ingredients": [
+        "chickpeas",
+        "onion",
+        "carrot",
+        "olive_oil"
+      ],
+      "method": "Toss chickpeas with diced onion and carrot, dress with olive oil.",
+      "emoji": "🥗",
+      "meal_type": "lunch",
+      "prep_minutes": 10,
+      "cook_minutes": 0,
+      "steps": [
+        "Drain and rinse the chickpeas.",
+        "Finely dice the onion and grate or dice the carrot.",
+        "Combine everything in a bowl.",
+        "Dress with olive oil, salt, pepper and a squeeze of lemon or a splash of vinegar. Toss well."
+      ],
+      "tip": "Let it sit for 10 minutes before eating so the chickpeas soak up the dressing."
+    },
+    {
+      "id": "baked_beans_jacket_potato",
+      "name": "Baked Beans Jacket Potato",
+      "servings": 2,
+      "protein_per_serving": 20,
+      "ingredients": [
+        "baked_beans",
+        "potatoes",
+        "cheese"
+      ],
+      "method": "Bake potatoes, top with heated baked beans and grated cheese.",
+      "emoji": "🥔",
+      "meal_type": "lunch",
+      "prep_minutes": 5,
+      "cook_minutes": 50,
+      "steps": [
+        "Bake the oiled, salted potatoes at 200°C for 45–50 minutes until crisp outside and fluffy inside.",
+        "Heat the baked beans in a saucepan.",
+        "Split the potatoes and spoon the beans over them.",
+        "Top with grated cheese and let it melt."
+      ],
+      "tip": "Microwave the potato for 8 minutes, then crisp it in the oven for 15, if you're short on time."
+    },
+    {
+      "id": "tuna_baked_potato",
+      "name": "Tuna Baked Potato",
+      "servings": 2,
+      "protein_per_serving": 27,
+      "ingredients": [
+        "canned_tuna",
+        "potatoes",
+        "cottage_cheese"
+      ],
+      "method": "Bake potatoes, top with canned tuna mixed with cottage cheese.",
+      "emoji": "🥔",
+      "meal_type": "lunch",
+      "prep_minutes": 5,
+      "cook_minutes": 50,
+      "steps": [
+        "Bake the oiled, salted potatoes at 200°C for 45–50 minutes.",
+        "Mix the drained tuna with the cottage cheese, and season with salt and pepper.",
+        "Split the potatoes and fluff up the insides.",
+        "Spoon the tuna mixture on top and serve."
+      ],
+      "tip": "Add diced onion or some herbs to the tuna mix for extra freshness."
+    },
+    {
+      "id": "peanut_butter_banana_toast",
+      "name": "Peanut Butter Banana Toast",
+      "servings": 1,
+      "protein_per_serving": 12,
+      "ingredients": [
+        "peanut_butter",
+        "bread",
+        "banana"
+      ],
+      "method": "Spread peanut butter on toast, top with sliced banana.",
+      "emoji": "🍌",
+      "meal_type": "snack",
+      "prep_minutes": 3,
+      "cook_minutes": 3,
+      "steps": [
+        "Toast the bread until golden.",
+        "Spread it thickly with peanut butter while it's still warm.",
+        "Slice the banana and layer it on top.",
+        "Finish with a sprinkle of cinnamon or a drizzle of honey if you like."
+      ],
+      "tip": "Warm toast melts the peanut butter slightly — that's the magic."
+    },
+    {
+      "id": "lentil_tomato_soup",
+      "name": "Lentil Tomato Soup",
+      "servings": 4,
+      "protein_per_serving": 14,
+      "ingredients": [
+        "lentils",
+        "canned_tomatoes",
+        "onion",
+        "carrot"
+      ],
+      "method": "Simmer lentils, canned tomatoes, onion and carrot into a soup.",
+      "emoji": "🍲",
+      "meal_type": "dinner",
+      "prep_minutes": 10,
+      "cook_minutes": 35,
+      "steps": [
+        "Soften the diced onion and carrot in oil in a large pot for 5–6 minutes.",
+        "Add the rinsed lentils, canned tomatoes and 4 cups of water or stock.",
+        "Bring to the boil, then simmer for 25–30 minutes until the lentils break down.",
+        "Season well. Blend partially for a creamy texture, or leave it chunky.",
+        "Serve hot, with toast if you have some."
+      ],
+      "tip": "It freezes perfectly — make a double batch and freeze it in portions."
+    },
+    {
+      "id": "tofu_curry",
+      "name": "Tofu Curry",
+      "servings": 3,
+      "protein_per_serving": 14,
+      "ingredients": [
+        "tofu",
+        "canned_tomatoes",
+        "onion",
+        "rice"
+      ],
+      "method": "Simmer tofu and onion in canned tomatoes as a curry, serve with rice.",
+      "emoji": "🍛",
+      "meal_type": "dinner",
+      "prep_minutes": 10,
+      "cook_minutes": 30,
+      "steps": [
+        "Cook the rice.",
+        "Press the tofu dry and cut it into cubes. Pan-fry until golden, then set aside.",
+        "Soften the diced onion in oil, then stir in curry powder for 1 minute.",
+        "Add the canned tomatoes and simmer for 10 minutes, then add the tofu and simmer 5 more.",
+        "Season and serve over the rice."
+      ],
+      "tip": "Frying the tofu first helps it hold its shape in the sauce."
+    },
+    {
+      "id": "egg_veg_fried_rice",
+      "name": "Egg & Veg Fried Rice",
+      "servings": 3,
+      "protein_per_serving": 15,
+      "ingredients": [
+        "eggs",
+        "rice",
+        "frozen_mixed_veg",
+        "onion"
+      ],
+      "method": "Scramble eggs with fried rice, onion and frozen mixed veg.",
+      "emoji": "🍳",
+      "meal_type": "dinner",
+      "prep_minutes": 5,
+      "cook_minutes": 15,
+      "steps": [
+        "Use cold, cooked rice.",
+        "Scramble the beaten eggs in a hot oiled wok, then set aside.",
+        "Stir-fry the diced onion for 2 minutes, then add the frozen mixed veg for 3 minutes.",
+        "Add the rice and toss over high heat until it's piping hot.",
+        "Fold the egg back in, season with soy sauce, and serve."
+      ],
+      "tip": "A drizzle of sesame oil at the end gives it a takeaway-style finish."
+    },
+    {
+      "id": "almond_berry_yogurt",
+      "name": "Almond Berry Yogurt",
+      "servings": 1,
+      "protein_per_serving": 16,
+      "ingredients": [
+        "greek_yogurt",
+        "almonds",
+        "frozen_berries"
+      ],
+      "method": "Top Greek yogurt with chopped almonds and frozen berries.",
+      "emoji": "🫐",
+      "meal_type": "snack",
+      "prep_minutes": 5,
+      "cook_minutes": 0,
+      "steps": [
+        "Let the frozen berries thaw for 10 minutes, or microwave them for 30 seconds to make a quick compote.",
+        "Spoon the Greek yogurt into a bowl.",
+        "Top with the berries and their juices.",
+        "Scatter over the chopped almonds."
+      ],
+      "tip": "Warm berries over cold yogurt is a lovely contrast — try it."
+    },
+    {
+      "id": "beef_mince_chickpea_stew",
+      "name": "Beef Mince & Chickpea Stew",
+      "servings": 4,
+      "protein_per_serving": 32,
+      "ingredients": [
+        "beef_mince",
+        "chickpeas",
+        "canned_tomatoes",
+        "onion"
+      ],
+      "method": "Brown beef mince with onion, add chickpeas and canned tomatoes, simmer as a stew.",
+      "emoji": "🍲",
+      "meal_type": "dinner",
+      "prep_minutes": 10,
+      "cook_minutes": 35,
+      "steps": [
+        "Brown the beef mince in a heavy pot for 6 minutes, breaking it up.",
+        "Add the diced onion and cook for 4 minutes until soft.",
+        "Stir in the drained chickpeas, canned tomatoes and ½ cup of water. Add paprika or cumin if you have them.",
+        "Simmer gently for 20–25 minutes until thick and rich.",
+        "Season to taste and serve on its own, with bread, or over rice."
+      ],
+      "tip": "Like most stews, it's even better reheated the next day."
+    }
+  ]
+}
